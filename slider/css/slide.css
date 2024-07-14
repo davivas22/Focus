@@ -33,11 +33,12 @@
    height: 100vh; /* establecer un alto fijo */
    object-fit: cover; /* ajustar la imagen dentro del contenedor */
    max-width: 1700px; /* establecer un tamaño máximo */
+   max-height: 720px;
     
 }
-@media (max-width: 8000px){
+@media (max-width: 1700px){
     .slider img{
-        max-height: 4000px;
+        max-height: 720px;
     }
     
 }
