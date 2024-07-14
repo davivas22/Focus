@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+    
+
+.slider{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    
+    
+    
+    
+
+}
+.slider ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: automatico 15s infinite alternate ease-in-out ;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+ 
+}
+.slider img{
+    
+    width: 100%;
+   height: 100vh; /* establecer un alto fijo */
+   object-fit: cover; /* ajustar la imagen dentro del contenedor */
+   max-width: 1700px; /* establecer un tamaño máximo */
+    
+}
+@media (max-width: 8000px){
+    .slider img{
+        max-height: 4000px;
+    }
+    
+}
+@keyframes automatico{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300;}
+    100%{margin-left: -300;}
+    
+
+}
+
